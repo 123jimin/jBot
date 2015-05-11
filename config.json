@@ -1,0 +1,23 @@
+{
+	// IRC Server to connect
+	"address": "irc.ozinger.org",
+	"debugMode": true,
+	// Name of the bot
+	"nick": "jBot_v5",
+	// Connection settings
+	"connection": {
+		"port": 6666,
+		"encoding": "UTF-8",
+		"userName": "jBot",
+		"realName": "jBot by JiminP",
+		// Initial channels to join
+		"channels": [
+			"#test"
+		]
+	},
+	"commandPrefix": {
+		"public": [";;"],
+		"private": ["::"]
+	},
+	"pluginDirectory": "plugins"
+}
