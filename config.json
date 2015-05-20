@@ -17,8 +17,8 @@
 		]
 	},
 	"commandPrefix": {
-		"public": [";;"],
-		"private": ["::"]
+		"public": [";"],
+		"private": [":"]
 	},
 	"pluginDirectory": "plugins",
 	// nick escaper
