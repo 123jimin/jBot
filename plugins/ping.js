@@ -9,6 +9,11 @@ PingPlugin.prototype.init = function PingPlugin$init(bot){
 		"@: 사용자에게 퐁을 때려줍니다.", function(msg, ctx, cmd, args){
 		bot.reply(ctx, msg.nick+", pong!");
 	});
+
+	bot.addCommand('pong', "퐁/pva/vhd".split('/'),
+		"@: 사용자에게 핑을 때려줍니다.", function(msg, ctx, cmd, args){
+		bot.reply(ctx, msg.nick+", ping!");
+	}, true);
 };
 
 PingPlugin.prototype.destroy = function PingPlugin$destroy(){

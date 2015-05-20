@@ -31,7 +31,7 @@ CommandPlugin.prototype.init = function CommandPlugin$init(bot){
 		bot.replyFormat(ctx, "명령 이름 앞에 %1를 붙이면 모두에게, %2를 붙이면 자신에게만 보이게 메세지를 보내줍니다. 각 명령에 대한 도움말은 ;help <명령이름> 으로 확인할 수 있습니다.",
 			bot.config.commandPrefix['public'][0],
 			bot.config.commandPrefix['private'][0]);
-		bot.reply(ctx, bot.commandList.join(', '));
+		bot.reply(ctx, bot.commandList.filter(function(cmd){return !bot.commands[cmd].hidden;}).join(', '));
 	});
 };
 
