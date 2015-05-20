@@ -12,6 +12,7 @@
 		"realName": "jBot by JiminP",
 		// Initial channels to join
 		"channels": [
+			// "#uncyclopedia"
 			"#test"
 		]
 	},
@@ -19,5 +20,7 @@
 		"public": [";;"],
 		"private": ["::"]
 	},
-	"pluginDirectory": "plugins"
+	"pluginDirectory": "plugins",
+	// nick escaper
+	"nickEscaper": "\u200C"
 }
