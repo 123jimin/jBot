@@ -1,0 +1,3 @@
+[submodule "plugins/jBot-plugins"]
+	path = plugins/jBot-plugins
+	url = https://github.com/123jimin/jBot-plugins.git
