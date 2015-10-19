@@ -16,6 +16,8 @@
 			"#test"
 		]
 	},
+	// Database for jBot
+	"database": "database.db",
 	"commandPrefix": {
 		"public": [";"],
 		"private": [":"]

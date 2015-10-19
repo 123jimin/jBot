@@ -1,14 +1,15 @@
 {
-	"name": "jBot",
-	"version": "2.0.0",
-	"private": true,
-	"description": "An IRC bot written in JavaScript",
-	"dependencies": {
-		"irc": "^0.3.12",
-		"strip-json-comments": "^1.0.2",
-		"path-is-absolute": "^1.0.0"
-	},
-	"scripts": {
-		"start": "node run.js"
-	}
+  "name": "jBot",
+  "version": "2.0.0",
+  "private": true,
+  "description": "An IRC bot written in JavaScript",
+  "dependencies": {
+    "irc": "^0.3.12",
+    "path-is-absolute": "^1.0.0",
+    "sqlite3": "^3.1.0",
+    "strip-json-comments": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node run.js"
+  }
 }
