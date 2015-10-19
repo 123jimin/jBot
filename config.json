@@ -4,6 +4,8 @@
 	"debugMode": true,
 	// Name of the bot
 	"nick": "jBot_v5",
+	// Owner of the bot
+	"owner": "JiminP",
 	// Connection settings
 	"connection": {
 		"port": 6666,
