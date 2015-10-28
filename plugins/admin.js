@@ -62,6 +62,8 @@ AdminPlugin.prototype.init = function AdminPlugin$init(bot){
 		else bot.say('NOTICE', msg.nick, "즐");
 	}, true);
 
+	bot.addListener('master', this.masterListener.bind(this));
+
 	bot.onReady(function(){
 		check(bot.config.owner);
 	});
@@ -88,7 +90,7 @@ AdminPlugin.prototype.destroy = function AdminPlugin$destroy(){
 	this.admin = null;
 	this.bot.client.removeListener('nick', this.nickListener);
 	this.bot.client.removeListener('quit', this.quitListener);
-	this.bot.removeListener('master', this.masterListener);
+	this.bot.removeAllListeners('master');
 };
 
 module.exports = new AdminPlugin;
